@@ -8010,7 +8010,7 @@ namespace EdiEngine.Standards.X12_005010.DataElements
 			DataType = DataType.ID;
 			MinLength = 5;
 			MaxLength = 5;
-			AllowedValues.AddRange(new[] { "00200","00201","00204","00300","00301","00302","00303","00304","00305","00306","00307","00400","00401","00402" });
+			AllowedValues.AddRange(new[] { "00200","00201","00204","00300","00301","00302","00303","00304","00305","00306","00307","00400","00401","00402","00501" });
 		}
 	}
 	public class E_0I12 : MapSimpleDataElement
@@ -8274,7 +8274,20 @@ namespace EdiEngine.Standards.X12_005010.DataElements
 			MaxLength = 6;
 		}
 	}
-	public class E_1000 : MapSimpleDataElement
+
+
+
+    public class E_0I65 : MapSimpleDataElement
+    {
+        public E_0I65()
+        {
+            DataType = DataType.AN;
+            MinLength = 1;
+            MaxLength = 1;
+        }
+    }
+
+    public class E_1000 : MapSimpleDataElement
 	{
 		public E_1000()
 		{

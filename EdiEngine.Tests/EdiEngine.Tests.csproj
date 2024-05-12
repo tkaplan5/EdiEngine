@@ -79,5 +79,6 @@
     <ProjectReference Include="..\EdiEngine.Common\EdiEngine.Common.csproj" />
     <ProjectReference Include="..\EdiEngine\EdiEngine.csproj" />
     <ProjectReference Include="..\EdiStandards\X12_004010\X12_004010.csproj" />
+    <ProjectReference Include="..\EdiStandards\X12_005010\X12_005010.csproj" />
   </ItemGroup>
 </Project>

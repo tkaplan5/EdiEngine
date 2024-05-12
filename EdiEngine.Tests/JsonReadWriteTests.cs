@@ -6,6 +6,8 @@ using System.Linq;
 using EdiEngine.Standards.X12_004010.Maps;
 using M_940 = EdiEngine.Standards.X12_004010.Maps.M_940;
 using EdiEngine.Tests.Maps;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.Interfaces;
+using System;
 
 namespace EdiEngine.Tests
 {
@@ -117,7 +119,9 @@ namespace EdiEngine.Tests
                 EdiBatch b = r.FromStream(s);
 
                 JsonDataWriter jsonWriter = new JsonDataWriter();
-                jsonWriter.WriteToString(b);
+                var result = jsonWriter.WriteToString(b);
+
+                Console.WriteLine(result);
             }
         }
 
