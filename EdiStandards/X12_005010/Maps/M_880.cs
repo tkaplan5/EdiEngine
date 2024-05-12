@@ -1,8 +1,8 @@
 using EdiEngine.Common.Enums;
 using EdiEngine.Common.Definitions;
-using EdiEngine.Standards.X12_004010.Segments;
+using EdiEngine.Standards.X12_005010.Segments;
 
-namespace EdiEngine.Standards.X12_004010.Maps
+namespace EdiEngine.Standards.X12_005010.Maps
 {
 	public class M_880 : MapLoop
 	{

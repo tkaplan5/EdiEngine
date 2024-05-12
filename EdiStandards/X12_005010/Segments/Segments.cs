@@ -1,8 +1,8 @@
 using EdiEngine.Common.Enums;
 using EdiEngine.Common.Definitions;
-using EdiEngine.Standards.X12_004010.DataElements;
+using EdiEngine.Standards.X12_005010.DataElements;
 
-namespace EdiEngine.Standards.X12_004010.Segments
+namespace EdiEngine.Standards.X12_005010.Segments
 {
 	public class AAA : MapSegment
 	{

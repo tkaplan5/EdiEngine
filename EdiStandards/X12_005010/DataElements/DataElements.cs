@@ -1,7 +1,7 @@
 using EdiEngine.Common.Enums;
 using EdiEngine.Common.Definitions;
 
-namespace EdiEngine.Standards.X12_004010.DataElements
+namespace EdiEngine.Standards.X12_005010.DataElements
 {
 	public class E_0001 : MapSimpleDataElement
 	{
