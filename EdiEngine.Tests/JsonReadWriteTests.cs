@@ -109,6 +109,21 @@ namespace EdiEngine.Tests
         }
 
         [TestMethod]
+        public void JsonReadWrite_Serialize_210()
+        {
+            using (Stream s = GetType().Assembly.GetManifestResourceStream("EdiEngine.Tests.TestData.210.UPS.5010.edi"))
+            {
+                EdiDataReader r = new EdiDataReader();
+                EdiBatch b = r.FromStream(s);
+
+                JsonDataWriter jsonWriter = new JsonDataWriter();
+                jsonWriter.WriteToString(b);
+            }
+        }
+
+
+
+        [TestMethod]
         public void JsonReadWrite_DeserializeComposite()
         {
             string json = TestUtils.ReadResourceStream("EdiEngine.Tests.TestData.001.Fake.Composite.json");

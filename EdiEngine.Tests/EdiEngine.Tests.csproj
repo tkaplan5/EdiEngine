@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
     <AssemblyName>EdiEngine.Tests</AssemblyName>
     <RootNamespace>EdiEngine.Tests</RootNamespace>
@@ -20,6 +20,7 @@
     <None Remove="edixml.xsd" />
     <None Remove="TestData\001.Fake.Composite.json" />
     <None Remove="TestData\001.Fake.Composite.xml" />
+    <None Remove="TestData\210.UPS.5010.edi" />
     <None Remove="TestData\850.Composite.SLN.OK.edi" />
     <None Remove="TestData\850.OK.edi" />
     <None Remove="TestData\850.SyntaxNotes.ERR.edi" />
@@ -45,6 +46,7 @@
     <EmbeddedResource Include="edixml.xsd" />
     <EmbeddedResource Include="TestData\001.Fake.Composite.json" />
     <EmbeddedResource Include="TestData\001.Fake.Composite.xml" />
+    <EmbeddedResource Include="TestData\210.UPS.5010.edi" />
     <EmbeddedResource Include="TestData\850.Composite.SLN.OK.edi" />
     <EmbeddedResource Include="TestData\850.OK.edi" />
     <EmbeddedResource Include="TestData\850.SyntaxNotes.ERR.edi" />
