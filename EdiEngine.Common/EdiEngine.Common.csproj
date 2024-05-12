@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>EdiEngine.Common</RootNamespace>
     <AssemblyName>EdiEngine.Common</AssemblyName>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
@@ -11,12 +10,8 @@
     <RepositoryUrl>https://github.com/olmelabs/EdiEngine</RepositoryUrl>
     <PackageProjectUrl>https://github.com/olmelabs/EdiEngine</PackageProjectUrl>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="newtonsoft.json" Version="13.0.3" />
-  </ItemGroup>
-  
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
-  </ItemGroup> 
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
 </Project>

@@ -1,0 +1,1437 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": true
+    },
+    "targetId": "",
+    "targetDisplayName": ".NET 8.0"
+  },
+  "analysisStartTime": "2024-05-12T00:11:29.5529857Z",
+  "analysisEndTime": "2024-05-12T00:12:05.4698016Z",
+  "stats": {
+    "summary": {
+      "projects": 4,
+      "issues": 3,
+      "incidents": 57,
+      "effort": 57
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 4,
+        "Optional": 48,
+        "Potential": 5,
+        "Information": 0
+      },
+      "category": {
+        "Project": 4,
+        "Api": 53
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 13,
+      "ruleInstances": [
+        {
+          "incidentId": "5b246d56-3126-465f-ac5b-15c18c783355",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Resolved",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+            "snippet": "Current: netstandard2.0\nNew: net8.0"
+          }
+        },
+        {
+          "incidentId": "7c52d974-33ef-4196-b96f-4cd727bcdf5b",
+          "ruleId": "Api.0003",
+          "description": "This API supports obsolete formatter-based serialization. It should not be called or extended by application code.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)\r\n    -\u003E System.Void System.Exception::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "protectedId": "M:System.Exception.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.exception.exception",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0051",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0051",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "bb2eac01-d1c8-464c-93fd-73c4bf71fe82",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonSerializer::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "70a008a5-b5bc-49e6-a59b-4abe6bafd7b0",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.JsonSerializer::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "4115b0bb-9adf-4d94-a23e-7a855d891b5a",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonSerializerSettings::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "54d863da-bb56-4152-9e14-123d1f038e87",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.JsonSerializerSettings::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "9986548e-27eb-435e-ab5b-1237967b1bf0",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "Newtonsoft.Json.Serialization.JsonFormatterConverter\r\n    -\u003E System.Runtime.Serialization.IFormatterConverter",
+            "protectedId": "T:System.Runtime.Serialization.IFormatterConverter",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.iformatterconverter",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "726d25f9-c59d-40c1-b594-90469d8c3128",
+          "ruleId": "Api.0003",
+          "description": "Assembly.LoadWithPartialName has been deprecated. Use Assembly.Load() instead.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Type Newtonsoft.Json.Serialization.DefaultSerializationBinder::GetTypeFromTypeNameKey(Newtonsoft.Json.Utilities.StructMultiKey\u00602\u003CSystem.String,System.String\u003E)\r\n    -\u003E System.Reflection.Assembly System.Reflection.Assembly::LoadWithPartialName(System.String)",
+            "protectedId": "M:System.Reflection.Assembly.LoadWithPartialName(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.loadwithpartialname",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "8b5bffec-889a-4763-a0a7-6e5550f551d8",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Object Newtonsoft.Json.Serialization.JsonSerializerInternalReader::CreateISerializable(Newtonsoft.Json.JsonReader,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,System.String)\r\n    -\u003E System.Void System.Runtime.Serialization.SerializationInfo::.ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "protectedId": "M:System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo.serializationinfo",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "ee287394-5bdb-434b-bd1d-6f6649847ec8",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerInternalWriter::SerializeISerializable(Newtonsoft.Json.JsonWriter,System.Runtime.Serialization.ISerializable,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,Newtonsoft.Json.Serialization.JsonContainerContract,Newtonsoft.Json.Serialization.JsonProperty)\r\n    -\u003E System.Void System.Runtime.Serialization.SerializationInfo::.ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "protectedId": "M:System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo.serializationinfo",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "64d127f7-75ce-49b4-85b5-6a1bc524ee8c",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.Serialization.JsonSerializerProxy::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "c54ac1cf-4fbb-4268-b35b-8b38837a6eb0",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerInternalWriter::SerializeISerializable(Newtonsoft.Json.JsonWriter,System.Runtime.Serialization.ISerializable,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,Newtonsoft.Json.Serialization.JsonContainerContract,Newtonsoft.Json.Serialization.JsonProperty)\r\n    -\u003E System.Void System.Runtime.Serialization.ISerializable::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "protectedId": "M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.iserializable.getobjectdata",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "0199481a-39eb-4970-bf3f-efe1d512fb83",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Common\\EdiEngine.Common.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerProxy::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 16,
+      "ruleInstances": [
+        {
+          "incidentId": "15059734-be48-47d1-bd80-0dfeffec2034",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Resolved",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+            "snippet": "Current: netstandard2.0\nNew: net8.0"
+          }
+        },
+        {
+          "incidentId": "0f6d1df0-add4-4ff8-8faa-ec13752cd9bc",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Newtonsoft.Json, 13.0.3.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\JsonDataWriter.cs",
+            "snippet": "serializer.Serialize(w, batch)",
+            "line": 13,
+            "column": 12,
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/newtonsoft.json.jsonserializer.serialize",
+                "isCustom": false
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "058cde9f-919e-464e-883e-dee5e116ee10",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Newtonsoft.Json, 13.0.3.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\JsonDataWriter.cs",
+            "snippet": "JsonConvert.SerializeObject(batch)",
+            "line": 22,
+            "column": 12,
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/newtonsoft.json.jsonconvert.serializeobject",
+                "isCustom": false
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "8148b374-e2a0-4c77-8916-9e0e9e8bc2a2",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Newtonsoft.Json, 13.0.3.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\JsonMapReader.cs",
+            "snippet": "reader.Read()",
+            "line": 21,
+            "column": 12,
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/newtonsoft.json.jsontextreader.read",
+                "isCustom": false
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "0fd90eae-9bec-4594-9dc2-597d1c8dcc1c",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerProxy::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "cee98d79-c899-48ef-a3a4-9d3422701a01",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerInternalWriter::SerializeISerializable(Newtonsoft.Json.JsonWriter,System.Runtime.Serialization.ISerializable,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,Newtonsoft.Json.Serialization.JsonContainerContract,Newtonsoft.Json.Serialization.JsonProperty)\r\n    -\u003E System.Void System.Runtime.Serialization.SerializationInfo::.ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "protectedId": "M:System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo.serializationinfo",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "996a9b37-6b22-4adb-b01a-b9d103b29f34",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.JsonSerializerSettings::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "27fb7160-1627-44e4-83f6-b7823d7f51a7",
+          "ruleId": "Api.0003",
+          "description": "This API supports obsolete formatter-based serialization. It should not be called or extended by application code.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)\r\n    -\u003E System.Void System.Exception::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "protectedId": "M:System.Exception.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.exception.exception",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0051",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0051",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "fddb4e12-89e4-42e0-9ac9-915b4db8b099",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonSerializer::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "4eb1c8d4-e247-4227-b52b-849e8a950f62",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Object Newtonsoft.Json.Serialization.JsonSerializerInternalReader::CreateISerializable(Newtonsoft.Json.JsonReader,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,System.String)\r\n    -\u003E System.Void System.Runtime.Serialization.SerializationInfo::.ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "protectedId": "M:System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo.serializationinfo",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "a1068f7b-452f-443d-9134-b95f581ab3e4",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.JsonSerializer::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "5460cfb4-5f87-45c4-883d-e846070b22cd",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonSerializerSettings::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "a1d03141-37cd-4701-8f3f-ae7dbd7c5775",
+          "ruleId": "Api.0003",
+          "description": "Assembly.LoadWithPartialName has been deprecated. Use Assembly.Load() instead.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Type Newtonsoft.Json.Serialization.DefaultSerializationBinder::GetTypeFromTypeNameKey(Newtonsoft.Json.Utilities.StructMultiKey\u00602\u003CSystem.String,System.String\u003E)\r\n    -\u003E System.Reflection.Assembly System.Reflection.Assembly::LoadWithPartialName(System.String)",
+            "protectedId": "M:System.Reflection.Assembly.LoadWithPartialName(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.loadwithpartialname",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "2503c91e-9b20-470e-8385-1d4b7fd43e36",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.Serialization.JsonSerializerProxy::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "44f3ca48-4491-4249-806f-3fdd5f4f1b21",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "Newtonsoft.Json.Serialization.JsonFormatterConverter\r\n    -\u003E System.Runtime.Serialization.IFormatterConverter",
+            "protectedId": "T:System.Runtime.Serialization.IFormatterConverter",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.iformatterconverter",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "0059b430-8636-45de-8989-9c268d12265e",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine\\EdiEngine.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerInternalWriter::SerializeISerializable(Newtonsoft.Json.JsonWriter,System.Runtime.Serialization.ISerializable,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,Newtonsoft.Json.Serialization.JsonContainerContract,Newtonsoft.Json.Serialization.JsonProperty)\r\n    -\u003E System.Void System.Runtime.Serialization.ISerializable::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "protectedId": "M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.iserializable.getobjectdata",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 15,
+      "ruleInstances": [
+        {
+          "incidentId": "26323e7d-e56c-40ae-87f5-e8c080efa4fe",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+            "snippet": "Current: netcoreapp3.1\nNew: net8.0"
+          }
+        },
+        {
+          "incidentId": "ab9bca92-df91-4f03-904b-1cdbcdd6f2f0",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Newtonsoft.Json, 13.0.3.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\JsonReadWriteTests.cs",
+            "snippet": "JsonConvert.SerializeObject(b)",
+            "line": 24,
+            "column": 16,
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/newtonsoft.json.jsonconvert.serializeobject",
+                "isCustom": false
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "d3d27639-11be-4cbe-9b8d-28730bf8e040",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Newtonsoft.Json, 13.0.3.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\JsonReadWriteTests.cs",
+            "snippet": "JsonConvert.SerializeObject(b.Interchanges[0].Groups[0].Transactions[0])",
+            "line": 25,
+            "column": 16,
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/newtonsoft.json.jsonconvert.serializeobject",
+                "isCustom": false
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "042c684a-a698-418c-8eb0-f72905053eed",
+          "ruleId": "Api.0003",
+          "description": "This API supports obsolete formatter-based serialization. It should not be called or extended by application code.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)\r\n    -\u003E System.Void System.Exception::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "protectedId": "M:System.Exception.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.exception.exception",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0051",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0051",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "0f995400-a301-4a71-b93b-b062857e0e2f",
+          "ruleId": "Api.0003",
+          "description": "Assembly.LoadWithPartialName has been deprecated. Use Assembly.Load() instead.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Type Newtonsoft.Json.Serialization.DefaultSerializationBinder::GetTypeFromTypeNameKey(Newtonsoft.Json.Utilities.StructMultiKey\u00602\u003CSystem.String,System.String\u003E)\r\n    -\u003E System.Reflection.Assembly System.Reflection.Assembly::LoadWithPartialName(System.String)",
+            "protectedId": "M:System.Reflection.Assembly.LoadWithPartialName(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.loadwithpartialname",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "be314d63-a053-4472-a5d2-f1e2f7e76294",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.JsonSerializer::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "8902f5c6-bf4b-4571-a9a1-bc5df4d29590",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonSerializer::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "bad796d8-830c-48ba-a7e3-701281d72098",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonSerializerSettings::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "8c108d52-c04b-41f4-a285-9b4a25aaed28",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.JsonSerializerSettings::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "5049513c-892a-4b59-a8c9-13d275c35292",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "Newtonsoft.Json.Serialization.JsonFormatterConverter\r\n    -\u003E System.Runtime.Serialization.IFormatterConverter",
+            "protectedId": "T:System.Runtime.Serialization.IFormatterConverter",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.iformatterconverter",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "514d931d-e3d0-4603-a4f5-0b03b81f9a15",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Object Newtonsoft.Json.Serialization.JsonSerializerInternalReader::CreateISerializable(Newtonsoft.Json.JsonReader,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,System.String)\r\n    -\u003E System.Void System.Runtime.Serialization.SerializationInfo::.ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "protectedId": "M:System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo.serializationinfo",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "5e1d16e9-1bba-4c26-a638-65402eec8f3e",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.Serialization.JsonSerializerProxy::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "cb1483e0-670c-430f-95cc-f8683d7a14e8",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerInternalWriter::SerializeISerializable(Newtonsoft.Json.JsonWriter,System.Runtime.Serialization.ISerializable,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,Newtonsoft.Json.Serialization.JsonContainerContract,Newtonsoft.Json.Serialization.JsonProperty)\r\n    -\u003E System.Void System.Runtime.Serialization.SerializationInfo::.ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "protectedId": "M:System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo.serializationinfo",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "b12f802f-aeb0-4f8c-a2ec-745a13a83e28",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerInternalWriter::SerializeISerializable(Newtonsoft.Json.JsonWriter,System.Runtime.Serialization.ISerializable,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,Newtonsoft.Json.Serialization.JsonContainerContract,Newtonsoft.Json.Serialization.JsonProperty)\r\n    -\u003E System.Void System.Runtime.Serialization.ISerializable::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "protectedId": "M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.iserializable.getobjectdata",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "33da4912-3333-4020-b33c-ef5b2c906512",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiEngine.Tests\\EdiEngine.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerProxy::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 13,
+      "ruleInstances": [
+        {
+          "incidentId": "cc22d877-1202-43e5-ad63-c95a40bb4ade",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Resolved",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+            "snippet": "Current: netstandard2.0\nNew: net8.0"
+          }
+        },
+        {
+          "incidentId": "d98216a5-8699-4449-a371-9c3e61fd1e7e",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.Serialization.JsonSerializerProxy::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "8a4416a0-d981-4824-81a8-444522f30254",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerProxy::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "2a1f569f-9a34-43b0-9538-017b5996f62e",
+          "ruleId": "Api.0003",
+          "description": "This API supports obsolete formatter-based serialization. It should not be called or extended by application code.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)\r\n    -\u003E System.Void System.Exception::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "protectedId": "M:System.Exception.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.exception.exception",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0051",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0051",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "feffb1ba-a57f-41c7-956a-087d7d92c472",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Object Newtonsoft.Json.Serialization.JsonSerializerInternalReader::CreateISerializable(Newtonsoft.Json.JsonReader,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,System.String)\r\n    -\u003E System.Void System.Runtime.Serialization.SerializationInfo::.ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "protectedId": "M:System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo.serializationinfo",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "24405421-342c-4c5d-ba52-59f9c1595545",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonSerializer::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "c761564f-6837-4445-a17a-7de8a3132162",
+          "ruleId": "Api.0003",
+          "description": "Assembly.LoadWithPartialName has been deprecated. Use Assembly.Load() instead.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Type Newtonsoft.Json.Serialization.DefaultSerializationBinder::GetTypeFromTypeNameKey(Newtonsoft.Json.Utilities.StructMultiKey\u00602\u003CSystem.String,System.String\u003E)\r\n    -\u003E System.Reflection.Assembly System.Reflection.Assembly::LoadWithPartialName(System.String)",
+            "protectedId": "M:System.Reflection.Assembly.LoadWithPartialName(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.loadwithpartialname",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "ca407d99-1a3e-422e-9778-5d9b7b5f43c7",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.JsonSerializer::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "de94c75c-68d5-4438-9ab3-2ea6bc886b61",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.JsonSerializerSettings::set_TypeNameAssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle)\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "a96e6837-0866-43e1-9e2c-dcb5015fa634",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Newtonsoft.Json.JsonSerializerSettings::TypeNameAssemblyFormat()\r\n    -\u003E System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "protectedId": "T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.formatterassemblystyle",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "6059bf67-e608-4c6a-b18b-0c4d85ced7eb",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "Newtonsoft.Json.Serialization.JsonFormatterConverter\r\n    -\u003E System.Runtime.Serialization.IFormatterConverter",
+            "protectedId": "T:System.Runtime.Serialization.IFormatterConverter",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.iformatterconverter",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "fe949c20-aa28-4856-a235-6eb635b5b4e8",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerInternalWriter::SerializeISerializable(Newtonsoft.Json.JsonWriter,System.Runtime.Serialization.ISerializable,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,Newtonsoft.Json.Serialization.JsonContainerContract,Newtonsoft.Json.Serialization.JsonProperty)\r\n    -\u003E System.Void System.Runtime.Serialization.SerializationInfo::.ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "protectedId": "M:System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo.serializationinfo",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "7d252774-8768-401f-bc0c-783b50674663",
+          "ruleId": "Api.0003",
+          "description": "Formatter-based serialization is obsolete and should not be used.",
+          "projectPath": "C:\\Users\\tkaplan\\source\\repos\\EdiEngine\\EdiStandards\\X12_004010\\X12_004010.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Users\\tkaplan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "snippet": "System.Void Newtonsoft.Json.Serialization.JsonSerializerInternalWriter::SerializeISerializable(Newtonsoft.Json.JsonWriter,System.Runtime.Serialization.ISerializable,Newtonsoft.Json.Serialization.JsonISerializableContract,Newtonsoft.Json.Serialization.JsonProperty,Newtonsoft.Json.Serialization.JsonContainerContract,Newtonsoft.Json.Serialization.JsonProperty)\r\n    -\u003E System.Void System.Runtime.Serialization.ISerializable::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "protectedId": "M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.iserializable.getobjectdata",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0050",
+                "isCustom": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "Project.0002": {
+      "id": "Project.0002",
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to correspinding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in moderrn .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "description": "API is obsolete.",
+      "label": "API is obsolete",
+      "severity": "Optional",
+      "effort": 1
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "description": "Some API that lived in older versions of .NET frameworks were moved to standalone NuGet packages that could be added to projects explicitly.",
+      "label": "API available in NuGet package",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
