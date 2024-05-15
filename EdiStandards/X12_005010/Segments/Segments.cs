@@ -8400,7 +8400,8 @@ namespace EdiEngine.Standards.X12_005010.Segments
 				new E_0127 { ReqDes = RequirementDesignator.Optional },
 				new E_0128 { ReqDes = RequirementDesignator.Optional },
 				new E_0352 { ReqDes = RequirementDesignator.Optional },
-			});
+                new E_0373 { ReqDes = RequirementDesignator.Optional },
+            });
 		}
 	}
 	public class L12 : MapSegment
